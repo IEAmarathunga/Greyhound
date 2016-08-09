@@ -1,0 +1,364 @@
+﻿
+<script>
+    $('.side_bar_menu').addClass('activate');
+
+    $(window).scroll(function () {
+        scroll = $(window).scrollTop();
+        if (scroll >= 100) {
+            $('.main_nav').addClass('activate');
+            $('body').addClass('activate45');
+        } else {
+            $('.main_nav').removeClass('activate');
+            $('body').removeClass('activate45');
+        }
+
+    });
+    $(window).load(function () {
+        $('#parentHorizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function (event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+
+    });
+</script>
+
+
+
+
+
+<div class="container padding-top">
+    <div class="col-md-9 wysiwig">
+        <h1>Welcome to the Greyhound Knowledge Forum</h1>
+        <p>The Greyhound-Data Forum has been created to act as a platform for greyhound enthusiasts to share information on this magnificent animal called a greyhound.</p>
+        <p>Greyhound-Data reserve the right to remove any post that is off topic, advertisements or opinions they consider to be offensive.</p>
+        <p>Please read the forum usage manual please note:</p>
+        <p>If you answer then please try to stay on topic. It's absolutely okay to answer in a broader scope but don't hijack posts by switching to something off topic. </p>
+        <p>n case you see an insulting post: DO NOT REPLY TO IT! Use the report button to inform the moderators so that we can delete it. </p>
+
+        <div id="parentHorizontalTab" class="tabsWithPointer margin-top" style="display: block; width: 100%; margin: 0px;">
+            <ul class="resp-tabs-list hor_1">
+                <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="border-color: rgb(193, 193, 193); background-color: white;">All Topics</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">GD-Website</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Breading</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-3" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Health</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-4" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Racing</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-5" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Coursing</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-6" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Adoption</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-7" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Betting</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-8" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Talk</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-9" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Team</li>
+            </ul>
+            <div class="resp-tabs-container hor_1 wysiwig" style="border-color: rgb(193, 193, 193);">
+
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);"><span class="resp-arrow"></span>GD-Website</h2>
+                <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
+                    <div class="special-messege">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla dolor placerat diam tempus, sit amet suscipit odio pellentesque. Maecenas ut egestas leo, at egestas tellus.
+                        </p>
+                    </div>
+                    <div class="btn-groups add-padding">
+                        <h3>All Topics</h3>
+                        <div class="clearfix"></div>
+                    </div>
+                    <table class="table table-striped margin-bottom-zero">
+                        <thead>
+                            <tr>
+                                <th>Topic</th>
+                                <th>Topic Starter</th>
+                                <th>Replies</th>
+                                <th>Views</th>
+                                <th>Last Action</th>
+                                <th>Last Post</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GD Syndicate Based in Ireland   (1, 2 )</td>
+                                <td>GD Racing Club</td>
+                                <td>36</td>
+                                <td>4328</td>
+                                <td>03 Aug 15:17</td>
+                                <td>Bobby Scullion</td>
+                            </tr>
+                            <tr>
+                                <td>GD Syndicate Based in Ireland   (1, 2 )</td>
+                                <td>GD Racing Club</td>
+                                <td>36</td>
+                                <td>4328</td>
+                                <td>03 Aug 15:17</td>
+                                <td>Bobby Scullion</td>
+                            </tr>
+                        </tbody>
+
+
+                    </table>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination margin-bottom-zero ">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">«</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">»</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);"><span class="resp-arrow"></span>GD-Website</h2>
+                <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
+                    dfdf
+                </div>
+            </div>
+        </div>
+
+        <!-- comment-section -->
+        <div id="" class="tabsWithPointer margin-top" style="display: block; width: 100%; margin: 0px;">
+            <ul class="resp-tabs-list hor_1">
+                <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="border-color: rgb(193, 193, 193); background-color: white;">All Topics</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">GD-Website</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Breading</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-3" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Health</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-4" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Racing</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-5" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Coursing</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-6" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Adoption</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-7" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Betting</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-8" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Talk</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-9" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Team</li>
+            </ul>
+            <div class="resp-tabs-container hor_1 wysiwig" style="border-color: rgb(193, 193, 193);">
+
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);"><span class="resp-arrow"></span>GD-Website</h2>
+                <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
+
+                    <div class="btn-groups add-padding">
+                        <h3>Topic Title</h3>
+                        <a href="#_" class="btn btn-default pull-right">New Topic</a>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="comments row">
+                        <div class="col-sm-3">
+                            <div class="profile-picture">
+                                <img src="http://www.greyhound-data.com/fotos_users/0/107610_f.jpg" />
+                            </div>
+                            <div class="name">Tony Gallagher</div>
+                            <div class="meta">
+                                Australia
+                                (Team Member)
+                                Posts 3990
+                                Dogs 11778 / Races 38887
+                                <span>20 Jul 2016 10:01</span>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-9">
+
+                            <p>
+
+                                Greyhound-Data Fundraising are putting together a World Group to raise funds to save greyhound racing in N.S.W. Australia.
+                                This will be an ongoing campaign and just as those who oppose greyhound racing in N.S.W. Australia continue to do so we will continue supporting the greyhounds that we love.
+
+                                We will unite greyhound enthusiasts worldwide to support us.
+
+                                All funds raised will be paid directly into the United N.S.W. Greyhound Industry Fighting Fund.
+
+                                No wages or fees will be taken by Greyhound-Data.
+
+                                We need at least one member from each Country and State to represent us. Their duties will include contacting the greyhound participants within their state and asking them for items to donate towards our fundraising auctions. Our representatives will also be expected to keep everyone up to date via this thread.
+
+                                Any support from other groups striving to achieve similar results which would like to support us please email tony@greyhound-data.com Let’s all start heading in the same direction.
+
+                                Our first auction will take place as soon as our representatives are in place.
+
+                                If you would like to donate anything for our auction please post it here.
+
+                                Thank you for “standing up to be counted” and helping us do our bit to save Greyhound Racing in N.S.W. Australia.
+                            </p>
+                        </div>
+                        <div class="controls">
+                            <a href="#_"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+                            <a href="#_"><span class="glyphicon glyphicon-bullhorn"></span>Quote</a>
+                            <a href="#_"><span class="glyphicon glyphicon-share-alt"></span>Reply</a>
+                            <a href="#_"><span class="glyphicon glyphicon-arrow-right"></span>Move</a>
+                        </div>
+                    </div>
+                    <div class="comments row">
+                        <div class="col-sm-3">
+                            <div class="profile-picture">
+                                <img src="http://www.greyhound-data.com/fotos_users/0/107610_f.jpg" />
+                            </div>
+                            <div class="name">Tony Gallagher</div>
+                            <div class="meta">
+                                Australia
+                                (Team Member)
+                                Posts 3990
+                                Dogs 11778 / Races 38887
+                                <span>20 Jul 2016 10:01</span>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-9">
+
+                            <p>
+
+                                Greyhound-Data Fundraising are putting together a World Group to raise funds to save greyhound racing in N.S.W. Australia.
+                                This will be an ongoing campaign and just as those who oppose greyhound racing in N.S.W. Australia continue to do so we will continue supporting the greyhounds that we love.
+
+                                We will unite greyhound enthusiasts worldwide to support us.
+
+                                All funds raised will be paid directly into the United N.S.W. Greyhound Industry Fighting Fund.
+
+                                No wages or fees will be taken by Greyhound-Data.
+
+                                We need at least one member from each Country and State to represent us. Their duties will include contacting the greyhound participants within their state and asking them for items to donate towards our fundraising auctions. Our representatives will also be expected to keep everyone up to date via this thread.
+
+                                Any support from other groups striving to achieve similar results which would like to support us please email tony@greyhound-data.com Let’s all start heading in the same direction.
+
+                                Our first auction will take place as soon as our representatives are in place.
+
+                                If you would like to donate anything for our auction please post it here.
+
+                                Thank you for “standing up to be counted” and helping us do our bit to save Greyhound Racing in N.S.W. Australia.
+                            </p>
+                        </div>
+                        <div class="controls">
+                            <a href="#_"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+                            <a href="#_"><span class="glyphicon glyphicon-bullhorn"></span>Quote</a>
+                            <a href="#_"><span class="glyphicon glyphicon-share-alt"></span>Reply</a>
+                            <a href="#_"><span class="glyphicon glyphicon-arrow-right"></span>Move</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);"><span class="resp-arrow"></span>GD-Website</h2>
+                <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
+                    dfdf
+                </div>
+            </div>
+        </div>
+
+        <!-- user-section -->
+        <div class="user-page">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active" ng-non-bindable></li>
+                    <li data-target="#myCarousel" data-slide-to="1" ng-non-bindable></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="http://3milliondogs.com/blog-assets-two/2015/04/greyhound-racing.jpg" alt="Chania" width="460" height="345">
+                    </div>
+
+                    <div class="item">
+                        <img src="http://3milliondogs.com/blog-assets-two/2015/04/greyhound-racing.jpg" alt="Chania" width="460" height="345">
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="">
+                <h3>Sandro Bechini</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu risus at sem dapibus laoreet porttitor id felis. Duis sit amet porttitor est, ut efficitur justo. Duis quis aliquet arcu. Sed sit amet lectus facilisis, rutrum augue eu, ornare metus. Vestibulum feugiat sapien ultricies tellus pretium tincidunt. Nunc rhoncus dapibus ligula at tincidunt. Nullam maximus finibus tincidunt. Vestibulum eu tempus augue, ut fermentum dolor.</p>
+                <p>Nulla augue nulla, iaculis eu vehicula vitae, tincidunt aliquet arcu. Duis consectetur eros et tortor posuere tempus. Ut sed purus lacinia, aliquam lacus quis, convallis orci. Aliquam erat volutpat. Etiam semper vel sapien pretium dapibus. Sed congue eros a scelerisque pretium. Nam tincidunt luctus nibh a fringilla.</p>
+                <h4>About</h4>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="col-md-3">
+        <div class="row side_bar">
+            <a href="#">
+                <img src="../../../Content/images/sidebar_add1.jpg">
+            </a>
+            <div class="latest_news">
+                <h2>Latest news</h2>
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            <img class="media-object" src="../../../Content/images/news1.jpg" alt="...">
+                        </a>
+                    </div>
+                    <a class="read_more" href="#">Read more</a>
+                    <hr>
+                </div>
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            <img class="media-object" src=".../../../Content/images/news1.jpg" alt="...">
+                        </a>
+                    </div>
+                    <a class="read_more" href="#">Read more</a>
+                    <hr>
+                </div>
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            <img class="media-object" src="../../../Content/images/news1.jpg" alt="...">
+                        </a>
+                    </div>
+                    <a class="read_more" href="#">Read more</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="weekly_video ">
+                <h2>Video of the week</h2>
+                <video width="100%" controls>
+                    <!--<source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">-->
+                    Your browser does not support HTML5 video.
+                </video>
+                <a href="#">View video gallery</a>
+            </div>
+            <a href="#">
+                <img src="../../../Content/images/sidebar_add2.jpg">
+            </a>
+        </div>
+    </div>
+</div>
