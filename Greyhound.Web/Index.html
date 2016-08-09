@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html ng-app="appGreyhound">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <!--load css files-->
+    <link href="Content/styles/bootstrap.css" rel="stylesheet" />
+    <link href="Content/styles/style.css" rel="stylesheet" />
+    <link href="Content/styles/intlTelInput.css" rel="stylesheet" />
+    <link href="Content/styles/Management.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+    <!--load library js-->
+
+    <!--jquery libraries-->
+    <script src="scripts/Lib/jquery-2.2.1.js"></script>
+    <script src="scripts/Lib/jquery.flexslider.js"></script>
+
+    <!--bootstrap libraries-->
+    <script src="scripts/Lib/bootstrap.js"></script>
+    
+    <!--angular libraries-->    
+    <script src="scripts/Lib/angular.js"></script>
+    <script src="scripts/Lib/angular-sanitize.js"></script>
+    <script src="scripts/Lib/angular-route.js"></script>
+    <script src="scripts/Lib/angular-recaptcha.js"></script>
+    <script src="scripts/Lib/angular-messages.js"></script>
+    <script src="scripts/Lib/angular-cookies.js"></script>
+    <script src="scripts/Lib/ui-bootstrap-0.14.3.min.js"></script>
+
+    <!--other libraries-->
+    <script src="scripts/Lib/jit.js"></script>
+    <script src="scripts/Lib/jquery.flexslider.js"></script>
+    <script src="scripts/Lib/intlTelInput.min.js"></script>
+    <script src="scripts/Lib/pagination.js"></script>
+    <script src="scripts/Lib/utils.js"></script>
+    <script src="scripts/Lib/easyResponsiveTabs.js"></script>
+
+    <!--load application js-->
+    <!--shared js-->   
+    <script src="scripts/App/Shared/Global.js"></script>
+    <script src="scripts/App/Shared/index.js"></script>
+    <script src="scripts/App/Shared/Messages.js"></script>
+    <script src="scripts/App/Shared/RouteControl.js"></script>
+    <script src="scripts/App/Shared/slider.js"></script>
+    <script src="scripts/App/Shared/AddDog.js"></script>
+    <script src="scripts/App/Shared/AddDogModal.js"></script>
+
+
+    <!--user js-->
+    <script src="App/Controllers/User/ForgotPassword.js"></script>
+    <script src="App/Controllers/User/Login.js"></script>
+    <script src="App/Controllers/User/Logout.js"></script>
+    <script src="App/Controllers/User/Membership.js"></script>
+    <script src="App/Controllers/User/Registration.js"></script>
+    <script src="App/Controllers/User/ResetPassword.js"></script>
+    <script src="App/Controllers/User/Welcome.js"></script>
+
+
+    <script>
+        $('.side_bar_menu').addClass('activate');
+
+        $(window).scroll(function () {
+            scroll = $(window).scrollTop();
+            if (scroll >= 100) {
+                $('.main_nav').addClass('activate');
+                $('body').addClass('activate45');
+            } else {
+                $('.main_nav').removeClass('activate');
+                $('body').removeClass('activate45');
+            }
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div ng-controller="MainController" class="wrapper">
+
+        <!--HEADER STARTS-->
+        <nav class="main_nav" grey-header>
+        </nav>
+        <!--HEADER ENDS-->
+        <!--BODY STARTS-->
+        <div ng-view autoscroll="true"></div>
+        <!--BODY ENDS-->
+        <!--FOOTER STARTS-->
+        <div class="clearfix"></div>
+        <footer grey-footer></footer>
+        <!--FOOTER ENDS-->
+
+    </div>
+</body>
+</html>

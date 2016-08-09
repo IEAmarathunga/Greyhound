@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GreyHound.Models</RootNamespace>
+    <AssemblyName>GreyHound.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classifieds\Advertisement.cs" />
+    <Compile Include="Classifieds\ClassifiedPrice.cs" />
+    <Compile Include="Classifieds\DogSaleType.cs" />
+    <Compile Include="Classifieds\DogsSale.cs" />
+    <Compile Include="Classifieds\LitterSale.cs" />
+    <Compile Include="Classifieds\MiscellaneousSale.cs" />
+    <Compile Include="Classifieds\MiscSaleType.cs" />
+    <Compile Include="Common\AgeGroup.cs" />
+    <Compile Include="Common\Breed.cs" />
+    <Compile Include="Common\ColorCategory.cs" />
+    <Compile Include="Common\Country.cs" />
+    <Compile Include="Common\CountryGroup.cs" />
+    <Compile Include="Common\Currency.cs" />
+    <Compile Include="Common\DogAdoptedOwner.cs" />
+    <Compile Include="Common\DogBreeder.cs" />
+    <Compile Include="Common\DogColor.cs" />
+    <Compile Include="Common\DogTrainer.cs" />
+    <Compile Include="Common\Image.cs" />
+    <Compile Include="Common\Video.cs" />
+    <Compile Include="Dogs\AdoptedDog.cs" />
+    <Compile Include="Dogs\BreededDog.cs" />
+    <Compile Include="Dogs\Dog.cs" />
+    <Compile Include="Dogs\DogStat.cs" />
+    <Compile Include="Dogs\TrainedDog.cs" />
+    <Compile Include="Enums\ClassifiedSection.cs" />
+    <Compile Include="Enums\Gender.cs" />
+    <Compile Include="Enums\ImageTypes.cs" />
+    <Compile Include="Enums\MemberType.cs" />
+    <Compile Include="Enums\Months.cs" />
+    <Compile Include="Enums\OpenDays.cs" />
+    <Compile Include="Enums\Races.cs" />
+    <Compile Include="Enums\RaceStatType.cs" />
+    <Compile Include="Enums\RaceTypes.cs" />
+    <Compile Include="Enums\Testmating.cs" />
+    <Compile Include="Enums\Tree.cs" />
+    <Compile Include="Enums\VideoTypes.cs" />
+    <Compile Include="GreyHoundContext.cs" />
+    <Compile Include="GreyhoundLibrary\Library.cs" />
+    <Compile Include="GreyhoundLibrary\LibraryFile.cs" />
+    <Compile Include="Kennels\Kennel.cs" />
+    <Compile Include="Kennels\KennelBreed.cs" />
+    <Compile Include="Kennels\KennelBrood.cs" />
+    <Compile Include="Kennels\KennlStudDogs.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Race\DistanceToWinner.cs" />
+    <Compile Include="Race\DistanceType.cs" />
+    <Compile Include="Race\Race.cs" />
+    <Compile Include="Race\RaceClass.cs" />
+    <Compile Include="Race\RaceFinishedOrder.cs" />
+    <Compile Include="Race\RaceGrade.cs" />
+    <Compile Include="Race\RaceHeat.cs" />
+    <Compile Include="Race\RaceResult.cs" />
+    <Compile Include="Race\RaceResultType.cs" />
+    <Compile Include="Race\RaceSpecialClass.cs" />
+    <Compile Include="Race\RaceStat.cs" />
+    <Compile Include="Race\RaceType.cs" />
+    <Compile Include="Sire\Sire.cs" />
+    <Compile Include="Studbook\Studbook.cs" />
+    <Compile Include="Studbook\StudbookVolume.cs" />
+    <Compile Include="Tracks\AdminBody.cs" />
+    <Compile Include="Tracks\Stadium.cs" />
+    <Compile Include="Tracks\StadiumOpenDay.cs" />
+    <Compile Include="Tracks\Track.cs" />
+    <Compile Include="Tracks\TrackDistance.cs" />
+    <Compile Include="Tracks\TrackForm.cs" />
+    <Compile Include="Tracks\TrackType.cs" />
+    <Compile Include="Users\Audience.cs" />
+    <Compile Include="Users\MembershipType.cs" />
+    <Compile Include="Users\Role.cs" />
+    <Compile Include="Users\User.cs" />
+    <Compile Include="Users\UserRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greyhound.Web", "Greyhound.Web\Greyhound.Web.csproj", "{4B0D707A-A486-4731-965D-68F9DC373CA7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADB37395-6A66-4E04-98CC-28B05E574B34} = {ADB37395-6A66-4E04-98CC-28B05E574B34}
+		{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED} = {2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreyHound.Dto", "GreyHound.Dto\GreyHound.Dto.csproj", "{ADB37395-6A66-4E04-98CC-28B05E574B34}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED} = {2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreyHound.Models", "GreyHound.Models\GreyHound.Models.csproj", "{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B0D707A-A486-4731-965D-68F9DC373CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0D707A-A486-4731-965D-68F9DC373CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0D707A-A486-4731-965D-68F9DC373CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0D707A-A486-4731-965D-68F9DC373CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB37395-6A66-4E04-98CC-28B05E574B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB37395-6A66-4E04-98CC-28B05E574B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB37395-6A66-4E04-98CC-28B05E574B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB37395-6A66-4E04-98CC-28B05E574B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC30BC2-A3DC-4B3A-8535-B11CFF3BBEED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

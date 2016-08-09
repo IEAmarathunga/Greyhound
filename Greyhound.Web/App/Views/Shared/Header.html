@@ -1,0 +1,167 @@
+﻿<div class="container header-top-section">
+
+    <div ng-controller="LogoutController" class="pull-right top_menu">
+        <div class="add-top-banner">
+            <img src="../../../Content/Images/General/add1.jpg" />
+        </div>
+
+        <div class="login_box " ng-hide="LoggedIn">
+            <ul>
+                <li><a href="#/Login">Login</a></li>
+                <li><a ng-href="#/Register">Register</a></li>
+                <li><img src="../../../Content/Images/General/twitter.jpg"></li>                
+                <li><img src="../../../Content/Images/General/fb.jpg" /></li>
+            </ul>
+            <form ng-submit="dogSearch(dogName)">
+                <input placeholder="Dog Search" type="text" ng-model="dogName" required />
+            </form>
+        </div>
+        <div class="login_box " ng-show="LoggedIn">
+            <!--<div class="login_box">-->
+            <ul>
+                <li>
+                    <i class="glyphicon glyphicon-user" style="display:inline-block"></i>
+                    <p style="font-size: 13px; color: #23527c; display: inline-block; ">{{userName}}</p>
+                </li>
+                <!--<li><p>{{ userService.xxx }}</p></li>-->
+                <li><a href="#/Logout" ng-click="logout()">Logout</a></li>
+            </ul>
+            <input placeholder="search the website" type="text">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="navbar-header">
+        <a ng-href="#/Home" class="logo">
+            <img alt="Greyhound" src="../../../Content/Images/General/logo.png">
+        </a>
+        <div class="menu-icon">
+            <span></span>
+        </div>
+    </div>
+</div>
+<div id="top-menu">
+    <div class="container">
+        <ul class="pull-right">
+            <li style="cursor:pointer;">
+                <a ng-href="#/Home">Home</a>
+                <div class="drop-down" style="width:190px;">
+                    <ul>
+                        <li><a href="">My Dashboard</a></li>
+                        <li><a href="#/Login">Login</a></li>
+                        <li><a href="">Create New Account</a></li>
+                        <li><a href="">Change Password</a></li>
+                        <li><a href="">Forgot Password</a></li>
+                        <li><a href="">Change Email</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;"><a href="#/Forum">Forum</a></li>
+            <li style="cursor:pointer;">
+                <a ng-href="">Racing</a>
+                <div class="drop-down" style="width:150px;">
+                    <ul>
+                        <li><a href="">Add A Dog</a></li>
+                        <li><a href="">Race Cards</a></li>
+                        <li><a href="">Race Results</a></li>
+                        <li><a href="">Add A Race</a></li>
+                        <li><a href="">Race Statistics</a></li>
+                        <li><a href="">Race Videos</a></li>
+                        <li><a href="#/Tracks">Tracks</a></li>
+                        <li><a href="#/Tattoo">Tatoos</a></li>
+                        <li><a href="#/Races">Races</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;">
+                <a ng-href="">Breeding</a>
+                <div class="drop-down" style="width:190px;">
+                    <ul>
+                        <li><a href="">Test Mating</a></li>
+                        <li><a href="#/Sire-Pages">All Sires</a></li>
+                        <li><a href="#/Active-Sires">Active Sires</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;">
+                <a ng-href="">Coursing</a>
+                <div class="drop-down" style="width:190px;">
+                    <ul>
+                        <li><a href="">Coursing</a></li>
+                        <li><a href="">Add A Coursing Dog</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;">
+                <a ng-href="">Gallery</a>
+                <div class="drop-down" style="width:110px;">
+                    <ul>
+                        <li><a href="">Photos</a></li>
+                        <li><a href="">Videos</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;">
+                <a>Adoption</a>
+                <div class="drop-down" style="width:190px;">
+                    <ul>
+                        <li><a href="">Add A Dog</a></li>
+                        <li><a href="">Rehoming Groups</a></li>
+                        <li><a href="">Available Dogs</a></li>
+                        <li><a href="">Adoption Forum</a></li>
+                        <li><a href="">Latest News</a></li>
+                        <li><a href="">Remembering Our Heroes</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;">
+                <a ng-href="">For Sale</a>
+                <div class="drop-down" style="width:110px;">
+                    <ul>
+                        <li><a href="">Index</a></li>
+                        <li><a href="">Auctions</a></li>
+                        <li><a href="#/Classifieds">Classifieds</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;">
+                <a ng-href="">Shops</a>
+                <div class="drop-down" style="width:170px;">
+                    <ul>
+                        <li><a href="">Australia</a></li>
+                        <li><a href="">United Kingdom</a></li>
+                        <li><a href="">Ireland</a></li>
+                        <li><a href="">Germany</a></li>
+                        <li><a href="">The Straw Store</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="cursor:pointer;">
+                <a ng-href="">Membership</a>
+                <div class="drop-down" style="width:190px;">
+                    <ul>
+                        <li><a href="">Verification</a></li>
+                        <li><a href="">Paid Membership</a></li>
+                        <li><a href="">Free Membership</a></li>
+                    </ul>
+                </div>
+            </li>           
+        </ul>
+    </div>
+</div>
+<div id="bottom-menu">
+    <div class="container">
+        <ul class="pull-right" ng-controller="HeaderDownController">
+            <li><a href="#/Kennels">Kennels</a></li>
+            <li><a href="#/Add-Race">Advertising</a></li>
+            <li><a href="#/Library">Library</a></li>
+            <li><a href="https://www.greyhound-data-membership.com/askthevet/" target="_blank">Ask the Vet</a></li>
+            <li><a href="#/Newsletter">Newsletter</a></li>
+            <li><a href="#/AboutUs">About Us</a></li>
+            <li><a href="#/test"></a></li>            
+        </ul>
+
+    </div>
+</div>
+

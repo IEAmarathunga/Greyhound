@@ -1,0 +1,383 @@
+﻿<script>
+    $('.carousel').carousel({
+        interval: 5000
+    })
+
+    $(document).ready(function () {
+
+        $(".search_dog_trigger").click(function () {
+            ids = $(this).attr('href');
+            //alert(ids);
+            $('.box_items').hide();
+            $('.search_dog_trigger').removeClass('current')
+            $(this).addClass('current')
+            $(ids).show();
+            return false;
+        });
+    });
+
+</script>
+<div class="main-slider">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../../../Content/Images/General/s1.jpg" alt="..." />                
+                <div class="carousel-caption">
+                    <div class="caption_title">
+                        <h3>welcome to</h3>
+                        <h1>Greyhound-data</h1>
+                        <p> Greyhound data provides information about</p>
+                        <p> greyhounds from all over the world with pedigree</p>
+                        <p> information drawn from the last four centuries</p>
+                        <p> online are <strong>3,701,882</strong> race results and
+                        <p> <strong>2,063,239 </strong> greyhound pedigrees.</p>
+                    </div>
+                    <!--<a href="#">
+                        <p>
+                            <strong>122312312</strong>  race result
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            <strong>122312312</strong>  race result
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            <strong>122312312</strong>  race result
+                        </p>
+                    </a>-->
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../../Content/Images/General/s1.jpg" alt="..." />      
+                <div class="carousel-caption">
+                    <div class="caption_title">
+                        <h3>welcome to</h3>
+                        <h1>Greyhound-data</h1>
+                        <p> Greyhound data provides information about</p>
+                        <p> greyhounds from all over the world with pedigree</p>
+                        <p> information drawn from the last four centuries</p>
+                        <p> online are <strong>3,701,882</strong>  </p>
+                        <p>race results and <strong>2,063,239 </strong></p>
+                        <p>greyhound pedigrees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--            content-->
+
+<div class="container home">
+    <div class="col-md-9">
+        <div class="row row_1">
+            <div class="col-md-7">
+                <img src="../../../Content/Images/General/god1.jpg">
+                <div class="overlay">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="#"> show pedigree</a>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="search_title">
+                    <div class="col-md-6 col-sm-6">
+                        <a class="current adopt_dog_trigger search_dog_trigger" href="#tab1" id="adoptDogTab">find a dog to adopt</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <a href="#tab2" class="search_dog_trigger  " id="searchDogTab">dog search</a>
+                    </div>
+                </div>
+                <form class="box_items" id="tab1" ng-controller="FindAdoptController">
+                    <div class="dog-search">
+                        <!--<input type="text" placeholder="Dog's name">-->
+                        <div class="row">
+                            <div class="radio col-md-6 radio_button_cover">
+                                <input type="radio" id="radio01" name="radio" />
+                                <label for="radio01"><span></span>Male</label>
+                                <input type="radio" id="radio02" name="radio" />
+                                <label for="radio02"><span></span>Female</label>
+                            </div>
+
+                            <div class="col-md-6">
+                                <select class="form-control" ng-model="color" ng-options="color.id as color.name for color in ColorList">
+                                    <option value="">Any</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <select ng-model="ageVar" ng-options="age.Group as age.Id for age in AgeGroup" class="form-control">
+                                    <option value="">Any</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <select ng-model="landVar" ng-options="country.id as country.name for country in CountryList" class="form-control">
+                                    <option value="">Any</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="submmit_inputs">
+                        <div class="col-md-6"><a href="#">advanced search</a></div>
+                        <div class="col-md-6"><input type="reset" value="clear"><input value="search" type="submit"></div>
+
+                    </div>
+                </form>
+
+                <form class="box_items" id="tab2" name="dogSearch" ng-controller="filterDogsCtrl">
+                    <!---->
+                    <div class="dog-search">
+                        <div ng-class="{ 'has-error' : dogSearch.txtName.$invalid && dogSearch.txtName.$dirty }">
+                            <input type="text" placeholder="Dog's name" name="txtName" ng-model="txtname" ng-change="validateName()" />
+                            <div ng-show="nameRequiredErrorMessage" class="alert alert-danger" style="margin-top:2%;">
+                                <a class="close" data-dismiss="alert">×</a>
+                                <br />
+                                {{errorMsg}}
+                            </div>
+                        </div>
+
+                        <!--<div class="row">
+                                <div class="radio col-md-6 radio_button_cover ">
+                                    <input type="radio" id="rdbMale" name="gender" ng-model="gender" value="1">
+                                    <label for="rdbMale"><span></span>Male</label>
+                                    <input type="radio" id="rdbFemale" name="gender" ng-model="gender" value="2">
+                                    <label for="rdbFemale"><span></span>Female</label>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <select ng-model="cmbColor" ng-change="changedValue(cmbColor)">
+                                        <option value="" selected>Color</option>
+                                        <option ng:repeat="color in colorDetails" value="{{color.id}}">
+                                            {{color.name}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <select id="cmbYear" ng-model="cmbYear" ng-change="changedValue(cmbYear)">
+                                        <option value=" " selected> Birth Year</option>
+                                        <option ng:repeat="year in yearDetails" value="{{year.id}}">
+                                            {{year.group}}
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <select id="cmbLand" ng-model="cmbLand" ng-change="changedValue(cmbLand)">
+                                        <option value=" " selected> Location</option>
+                                        <option ng:repeat="land in landDetails" value="{{land.id}}">
+                                            {{land.name}}
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <select id="cmbBreed" ng-model="cmbBreed" ng-change="changedValue(cmbBreed)">
+                                        <option value=" " selected> Breed</option>
+                                        <option ng:repeat="breed in breedDetails" value="{{breed.id}}">
+                                            {{breed.name}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>-->
+                        <div class=" row submmit_inputs pull-right">
+
+                            <div class="col-md-6">
+                                <input id="btnDogSearch" value="Search" type="submit" ng-click="filterDogDetails(txtname)" />
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="row row_2">
+            <div class="col-md-5">
+                <img src="../../../Content/Images/General/add2.jpg">
+            </div>
+
+            <div class="col-md-7">
+                <img src="../../../Content/Images/General/classifide.jpg">
+                <div class="classifide-holder">
+                    <h2>Classifieds</h2>
+                    <div class="classifide_links">
+                        <a href="#">Puppis for sale</a>
+                        <a href="#">Puppis for sale</a>
+                        <a href="#">Puppis for sale</a>
+                        <a href="#">Puppis for sale</a>
+                    </div>
+                    <div class="classifide_viewall">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                        <a href="#">View all Classifieds</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row_3">
+            <div class="col-md-6 statistics">
+                <div class="statistics_title">
+                    <img src="../../../Content/Images/General/stats.png">
+                    <div class="title">
+                        <h2>Statistics</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Single Race</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Time Base</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Advanced Race</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                        <p>This statistics shows you the dogs with the most wins considering all races. The simple statistic does not consider the quality of the races. Winning a Derby counts the same as winning small graded race.</p>
+                        <a href="#">Go to Calculations</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="profile">
+                        <p>This statistics shows you the dogs with the most wins considering all races. The simple statistic does not consider the quality of the races. Winning a Derby counts the same as winning small graded race.</p>
+                        <a href="#">Go to Calculations</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="messages">
+                        <p>This statistics shows you the dogs with the most wins considering all races. The simple statistic does not consider the quality of the races. Winning a Derby counts the same as winning small graded race.</p>
+                        <a href="#">Go to Calculations</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 testmating">
+                <form>
+                    <div class="testmate_title">
+                        <img src="../../../Content/Images/General/testmate.png">
+
+                        <div class="title">
+                            <h2>Testmating</h2>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="sire">
+                        <input type="text" placeholder="sire" readonly="">
+                        <a href="#">Change</a>
+                    </div>
+                    <div class="dam">
+                        <input type="text" placeholder="dam" readonly="">
+                        <a href="#">Change</a>
+                    </div>
+                    <div class="submmit_inputs">
+                        <a href="#">Expert</a>
+                        <input type="submit" value="show testmating">
+                    </div>
+
+                </form>
+                <img src="../../../Content/Images/General/sponser.png">
+            </div>
+
+        </div>
+
+        <div class="row row_4">
+            <div class="col-md-6">
+                <img src="../../../Content/Images/General/bottom_ad.jpg">
+            </div>
+            <div class="col-md-6 gd-message">
+                <!--below text should look like a hand written text-->
+                <p>Greyhound-Data racing into the future…</p>
+                <p>Thanks for your support!</p>
+                <p>Your GD Team.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-md-3">
+        <div class="row side_bar">
+            <a href="#">
+                <img src="../../../Content/Images/General/sidebar_add1.jpg">
+            </a>
+            <div class="latest_news">
+                <h2>Latest news</h2>
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            <img class="media-object" src="../../../Content/Images/General/news1.jpg" alt="...">
+                        </a>
+                    </div>
+                    <a class="read_more" href="#">Read more</a>
+                    <hr>
+                </div>
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            <img class="media-object" src="../../../Content/images/General/news1.jpg" alt="...">
+                        </a>
+                    </div>
+                    <a class="read_more" href="#">Read more</a>
+                    <hr>
+                </div>
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            <img class="media-object" src="../../../Content/images/General/news1.jpg" alt="...">
+                        </a>
+                    </div>
+                    <a class="read_more" href="#">Read more</a>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="weekly_video ">
+                <h2>Video of the week</h2>
+
+                <video width="100%" controls>
+                    <!--<source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">-->
+                    Your browser does not support HTML5 video.
+                </video>
+
+                <a href="#">View video gallery</a>
+
+            </div>
+            <a href="#">
+                <img src="../../../Content/Images/General/sidebar_add2.jpg">
+            </a>
+        </div>
+    </div>
+</div>
