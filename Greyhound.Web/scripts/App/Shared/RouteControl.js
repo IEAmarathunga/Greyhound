@@ -20,6 +20,14 @@ appGreyhound
              templateUrl: 'App/Views/Forum/MainPage.html',
              controller: ''
          }).
+         when('/Discussion', {
+             templateUrl: 'App/Views/Forum/Discussion.html',
+             controller: ''
+         }).
+         when('/UserProfile', {
+             templateUrl: 'App/Views/Forum/UserProfile.html',
+             controller: ''
+         }).
 
         when('/Home', {
             templateUrl: 'App/Views/Shared/Content.html',
