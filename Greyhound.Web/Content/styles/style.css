@@ -598,6 +598,12 @@ display:block;
 .classified-ads-sec .thumbs .descriptions h4{ color: #830300; }
 .classified-ads-sec .thumbs .descriptions strong{ color: #333; }
 .classified-ads-sec .thumbs .descriptions p{ color: #333; }
+.modal-body-scroll-v {
+        height: 525px;
+        overflow-y: auto;
+ }
+
+
 
 
 
@@ -683,9 +689,6 @@ inputinput[type=number]::-webkit-outer-spin-button,inputinput[type=number]::-web
 }
 
 
-
-
-
 /* iPads (portrait and landscape) ----------- */
 @media  screen 
 and (min-width :481px) 
@@ -719,5 +722,8 @@ and (max-width : 1260px) {
     .home .testmating input[type="text"] {   width: 100%;margin-bottom: 10px}
     .home .testmating a {margin-left: 0px;}
     .home .testmating .sire, .home .testmating .dam { margin-bottom: 38px;}
-    
+    .modal-body-scroll-v {
+        height: 525px;
+        overflow-y: auto;
+    }
 }
