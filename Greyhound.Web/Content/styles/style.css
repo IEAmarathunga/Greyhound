@@ -601,8 +601,10 @@ display:block;
 
 
 
+/* gk update */
 
-
+tbody > tr > td a {color: #404040;}
+.comments  .user-data a {color:#222}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media  screen and (max-width : 480px) {

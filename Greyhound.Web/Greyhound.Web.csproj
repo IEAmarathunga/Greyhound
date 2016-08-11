@@ -152,6 +152,7 @@
     <Content Include="App\Controllers\User\ResetPassword.js" />
     <Content Include="App\Controllers\User\Welcome.js" />
     <Content Include="App\Views\Forum\MainPage.html" />
+    <Content Include="App\Views\Forum\Discussion.html" />
     <Content Include="App\Views\Forum\UserProfile.html" />
     <Content Include="App\Views\Shared\Content.html" />
     <Content Include="App\Views\Shared\Footer.html" />
@@ -240,6 +241,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Views\Tracks\" />
     <Folder Include="App_Data\" />
     <Folder Include="Content\Videos\" />
   </ItemGroup>
