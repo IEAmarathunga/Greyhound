@@ -152,6 +152,7 @@
     <Content Include="App\Controllers\User\ResetPassword.js" />
     <Content Include="App\Controllers\User\Welcome.js" />
     <Content Include="App\Views\Forum\MainPage.html" />
+    <Content Include="App\Views\Forum\UserProfile.html" />
     <Content Include="App\Views\Shared\Content.html" />
     <Content Include="App\Views\Shared\Footer.html" />
     <Content Include="App\Views\Shared\Header.html" />
