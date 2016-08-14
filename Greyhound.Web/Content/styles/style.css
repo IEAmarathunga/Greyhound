@@ -51,6 +51,7 @@ input[type="color"]:focus,
 
 
 
+
 /*menu*/
 
 #top-menu ul li , #bottom-menu ul li{display: inline-block;    margin: 0px 13px;}
@@ -443,6 +444,14 @@ input:disabled {
 .padding-top                                            {padding-top:40px;}
 .margin-bottom-zero                                     {margin-bottom:0}
 .margin-top                                             {margin-top:20px !important;}
+.comments.add-comment                                            {padding: 15px}
+.small-tabs > .nav li                                 {float:none; display: inline-block}
+.small-tabs p                                           {font-size:12px; line-height:20px}
+.small-tabs > .nav                                    {text-align:center}
+.small-tabs .nav a                                  {font-size: 12px; line-height: 20px;    padding: 5px 10px;}
+.small-tabs .tab-content                            {padding: 15px;background: #fff}
+.small-tabs                                         {padding: 20px 0}
+img.country                                          {padding: 20px}
 
 .resp-tabs-list li {
     font-size: 11px;
@@ -468,10 +477,24 @@ input:disabled {
     border-left: 4px solid #e0bd6b;
     background: #fff1d0;
 }
+.comment-text {background: #eee; border-radius: 4px; padding: 15px;position:relative}
+.comment-text:after {
+	right: 100%;
+	top: 30px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+    border-right-color: #eeeeee;
+	border-width: 10px;
+	margin-top: -10px;
+}
 .comments {
 text-align:left;
     padding: 15px 0 0px 0;
-    background:#eee;
     border-bottom:1px solid #eee;
         margin: 5px 0;
 }
@@ -533,7 +556,7 @@ padding:5px 0;
     font-size:12px;
 }
 .btn-groups.add-padding { 
-padding:10px 0;
+padding:15px ;
 display:block;
 }
 .resp-tab-content {
@@ -611,6 +634,7 @@ display:block;
 
 tbody > tr > td a {color: #404040;}
 .comments  .user-data a {color:#222}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media  screen and (max-width : 480px) {
