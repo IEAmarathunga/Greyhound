@@ -172,42 +172,42 @@ appGreyhound
         }).
 
          when('/Classifieds', {
-             templateUrl: 'App/Views/Classifieds/ClassifiedsHome.html',
+             templateUrl: 'App/Views/Classifieds/Classifieds.html',
              controller: ''
          }).
 
         when('/Classifieds/pups-for-sale', {
-            templateUrl: 'App/Views/Classifieds/pups_for_sale.html',
+            templateUrl: 'App/Views/Classifieds/PupsForSale.html',
             controller: ''
         }).
 
         when('/Classifieds/dogs-for-sale', {
-            templateUrl: 'App/Views/Classifieds/dogs-for-sale.html',
+            templateUrl: 'App/Views/Classifieds/DogsForSale.html',
             controller: ''
         }).
 
         when('/Classifieds/bussiness-ads', {
-            templateUrl: 'App/Views/Classifieds/bussiness-ads.html',
+            templateUrl: 'App/Views/Classifieds/BusinessAds.html',
             controller: ''
         }).
 
          when('/Classifieds/private-ads', {
-             templateUrl: 'App/Views/Classifieds/private-ads.html',
+             templateUrl: 'App/Views/Classifieds/PrivateAds.html',
              controller: ''
          }).
 
         when('/Classifieds/litter-ads', {
-            templateUrl: 'App/Views/Classifieds/litter-ads.html',
+            templateUrl: 'App/Views/Classifieds/PlaceLitterAd.html',
             controller: ''
         }).
 
         when('/Classifieds/place-dog-ads', {
-            templateUrl: 'App/Views/Classifieds/add-dog-ads.html',
+            templateUrl: 'App/Views/Classifieds/PlaceDogAd.html',
             controller: ''
         }).
 
         when('/Classifieds/place-misc-ads', {
-            templateUrl: 'App/Views/Classifieds/add-misc-ads.html',
+            templateUrl: 'App/Views/Classifieds/PlaceMiscAd.html',
             controller: ''
         }).
 
