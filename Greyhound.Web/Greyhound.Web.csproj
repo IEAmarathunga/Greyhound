@@ -158,7 +158,7 @@
     <Content Include="App\Views\Classifieds\PlaceDogAd.html" />
     <Content Include="App\Views\Classifieds\PlaceLitterAd.html" />
     <Content Include="App\Views\Classifieds\PlaceMiscAd.html" />
-    <Content Include="App\Views\Classifieds\Private Ads.html" />
+    <Content Include="App\Views\Classifieds\PrivateAds.html" />
     <Content Include="App\Views\Classifieds\PupsForSale.html" />
     <Content Include="App\Views\Forum\MainPage.html" />
     <Content Include="App\Views\Forum\Discussion.html" />
