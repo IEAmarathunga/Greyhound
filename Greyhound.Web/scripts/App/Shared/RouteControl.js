@@ -29,6 +29,18 @@ appGreyhound
              controller: ''
          }).
 
+
+        //tracks
+        when('/Tracks', {
+            templateUrl: 'App/Views/Tracks/Track.html',
+            controller: ''
+        }).
+        when('/Stadium', {
+            templateUrl: 'App/Views/Tracks/Stadium.html',
+            controller: ''
+        }).
+
+
         when('/Home', {
             templateUrl: 'App/Views/Shared/Content.html',
             controller: ''
@@ -151,15 +163,17 @@ appGreyhound
             controller: ''
         }).
 
-        when('/Tracks/:countryId?/:stadiumId?', {
-            templateUrl: 'App/Views/Tracks/StadiumDetails.html',//'App/Views/Tracks/TracksDetails.html',
-            controller: ''
-        }).
+        //when('/Tracks/:countryId?/:stadiumId?', {
+        //    templateUrl: 'App/Views/Tracks/StadiumDetails.html',//'App/Views/Tracks/TracksDetails.html',
+        //    controller: ''
+        //}).
 
-        when('/Tracks/Country', {
-            templateUrl: 'App/Views/Tracks/TrackCountryDetails.html',
-            controller: ''
-        }).
+        //when('/Tracks/Country', {
+        //    templateUrl: 'App/Views/Tracks/TrackCountryDetails.html',
+        //    controller: ''
+        //}).
+         
+        
 
         when('/RaceDetails/FullMeeting', {
             templateUrl: 'App/Views/Race/FullMeeting.html',

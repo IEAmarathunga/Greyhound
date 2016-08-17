@@ -166,6 +166,8 @@
     <Content Include="App\Views\Shared\Content.html" />
     <Content Include="App\Views\Shared\Footer.html" />
     <Content Include="App\Views\Shared\Header.html" />
+    <Content Include="App\Views\Tracks\Stadium.html" />
+    <Content Include="App\Views\Tracks\Track.html" />
     <Content Include="Content\Images\General\add1.jpg" />
     <Content Include="Content\Images\General\add2.jpg" />
     <Content Include="Content\Images\General\aushound_logo_small.png" />
@@ -254,7 +256,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Views\Tracks\" />
     <Folder Include="App_Data\" />
     <Folder Include="Content\Videos\" />
   </ItemGroup>
