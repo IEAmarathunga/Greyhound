@@ -428,6 +428,7 @@ input:disabled {
 }
 .nav-tabs > li > a                                  {    color: #830300;font-weight: 600}
 .breeding .tab-pane                                 {padding: 10px;}
+.wysiwig                                            {font-size: 12px;}
 .wysiwig img                                        {float:Left;padding: 5px 10px;}
 .wysiwig p                                          {font-size: 13px;line-height: 20px;margin-bottom: 10px}
 .wysiwig h3                                         {margin: 0 0 15px 0}
@@ -444,6 +445,7 @@ input:disabled {
 .padding-top                                            {padding-top:40px;}
 .margin-bottom-zero                                     {margin-bottom:0}
 .margin-top                                             {margin-top:20px !important;}
+
 
 .resp-tabs-list li {
     font-size: 11px;
@@ -635,7 +637,15 @@ tbody > tr > td a {color: #404040;}
 	margin-top: -10px;
 }
 .carousel-inner {margin-bottom: 10px}
-
+.main-button-panel .btn { display:inline-block;    border-radius:4px;}
+    .main-button-panel .btn.btn-primary {    background-color: #191919;
+    border-color: #424242;}
+.main-button-panel {text-align: center;width: 100%; padding-bottom: 15px}
+.table.small-table {font-size: 11px;font-weight: 600}
+.darker             {background:#222; color: #fff}
+    .table.small-table td {padding: 3px 0;border-right: 1px solid #ddd; text-align: center;vertical-align:middle}
+    .table.small-table th {padding: 3px 0;border-right: 1px solid #771e1c;text-align: center;}
+.small-table.distance .darker {min-width:100px}
 /* Smartphones (portrait and landscape) ----------- */
 @media  screen and (max-width : 480px) {
 #top-menu, #bottom-menu, .login_box , .add-top-banner {display: none}
