@@ -225,6 +225,9 @@
     <Compile Include="Controllers\Common\IMasterDataService.cs" />
     <Compile Include="Controllers\Common\MasterDataController.cs" />
     <Compile Include="Controllers\Common\MasterDataService.cs" />
+    <Compile Include="Controllers\Forum\ForumController.cs" />
+    <Compile Include="Controllers\Forum\ForumService.cs" />
+    <Compile Include="Controllers\Forum\IForumService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

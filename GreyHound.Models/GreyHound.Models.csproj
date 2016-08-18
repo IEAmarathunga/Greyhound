@@ -87,6 +87,9 @@
     <Compile Include="Enums\Testmating.cs" />
     <Compile Include="Enums\Tree.cs" />
     <Compile Include="Enums\VideoTypes.cs" />
+    <Compile Include="Forum\ForumDiscussion.cs" />
+    <Compile Include="Forum\ForumReply.cs" />
+    <Compile Include="Forum\ForumTopic.cs" />
     <Compile Include="GreyHoundContext.cs" />
     <Compile Include="GreyhoundLibrary\Library.cs" />
     <Compile Include="GreyhoundLibrary\LibraryFile.cs" />
