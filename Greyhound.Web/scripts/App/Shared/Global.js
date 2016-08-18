@@ -247,6 +247,16 @@ var appGreyhound = angular.module('appGreyhound', ['ngSanitize', 'ngRoute', 'ang
 
 }])
 
+.service('Stadium', ['$http', 'urls', function ($http, urls) {
+    return {
+        CountryId: function (id) {
+            $http.get(urls.api+'Stadium/'+id);
+        }
+    }
+}])
+
+
+
 .service('EmailModalService', ['$modal', function ($modal) {
     this.openModal = function (to, title) {
         var modalInstance = $modal.open({
