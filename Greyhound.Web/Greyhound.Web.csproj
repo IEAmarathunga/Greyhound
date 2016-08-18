@@ -204,6 +204,7 @@
     <Content Include="scripts\App\Shared\Messages.js" />
     <Content Include="scripts\App\Shared\RouteControl.js" />
     <Content Include="scripts\App\Shared\slider.js" />
+    <Content Include="scripts\App\Tracks\TracksController.js" />
     <Content Include="scripts\Lib\angular-cookies.js" />
     <Content Include="scripts\Lib\angular-cookies.min.js" />
     <Content Include="scripts\Lib\angular-messages.js" />
