@@ -144,13 +144,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\Controllers\User\ForgotPassword.js" />
-    <Content Include="App\Controllers\User\Login.js" />
-    <Content Include="App\Controllers\User\Logout.js" />
-    <Content Include="App\Controllers\User\Membership.js" />
-    <Content Include="App\Controllers\User\Registration.js" />
-    <Content Include="App\Controllers\User\ResetPassword.js" />
-    <Content Include="App\Controllers\User\Welcome.js" />
+    <Content Include="scripts\App\Forum\ForumController.js" />
+    <Content Include="scripts\App\User\ForgotPassword.js" />
+    <Content Include="scripts\App\User\Login.js" />
+    <Content Include="scripts\App\User\Logout.js" />
+    <Content Include="scripts\App\User\Membership.js" />
+    <Content Include="scripts\App\User\Registration.js" />
+    <Content Include="scripts\App\User\ResetPassword.js" />
+    <Content Include="scripts\App\User\Welcome.js" />
+    <Content Include="App\Views\Forum\ForumMannual.html" />
     <Content Include="App\Views\Forum\MainPage.html" />
     <Content Include="App\Views\Forum\Discussion.html" />
     <Content Include="App\Views\Forum\UserProfile.html" />
@@ -241,6 +243,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Controllers\" />
     <Folder Include="App\Views\Tracks\" />
     <Folder Include="App_Data\" />
     <Folder Include="Content\Videos\" />
