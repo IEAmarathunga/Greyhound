@@ -35,6 +35,8 @@ namespace GreyHound.Dto.Tracks
 
     public class TrackFormsDto
     {
+        public int? FormId { get; set; }
+        public int? TrackId { get; set; }
         public DateTime DateFrom { get; set; }
         public DateTime DateTo { get; set; }
         public decimal? Time { get; set; }
