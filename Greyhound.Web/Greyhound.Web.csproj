@@ -237,11 +237,15 @@
     <Compile Include="Controllers\Common\IMasterDataService.cs" />
     <Compile Include="Controllers\Common\MasterDataController.cs" />
     <Compile Include="Controllers\Common\MasterDataService.cs" />
+    <Compile Include="Controllers\Tracks\ITrackService.cs" />
+    <Compile Include="Controllers\Tracks\TrackController.cs" />
+    <Compile Include="Controllers\Tracks\TrackService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CommonServices.cs" />
+    <Compile Include="Services\RaceServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
