@@ -10,6 +10,7 @@ namespace Greyhound.Web.Controllers.Forum
     [RoutePrefix("api/Forum")]
     public class ForumController : ApiController
     {
+        //charles testing
         private readonly IForumService _service;
 
         public ForumController()
