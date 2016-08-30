@@ -144,6 +144,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Views\Classifieds\BusinessAds.html" />
+    <Content Include="App\Views\Classifieds\Classifieds.html" />
+    <Content Include="App\Views\Classifieds\DeleteAd.html" />
+    <Content Include="App\Views\Classifieds\DogsForSale.html" />
+    <Content Include="App\Views\Classifieds\PlaceDogAd.html" />
+    <Content Include="App\Views\Classifieds\PlaceLitterAd.html" />
+    <Content Include="App\Views\Classifieds\PlaceMiscAd.html" />
+    <Content Include="App\Views\Classifieds\PrivateAds.html" />
+    <Content Include="App\Views\Classifieds\PupsForSale.html" />
+    <Content Include="App\Views\Tracks\Stadium.html" />
+    <Content Include="App\Views\Tracks\Track.html" />
     <Content Include="scripts\App\Forum\ForumController.js" />
     <Content Include="scripts\App\User\ForgotPassword.js" />
     <Content Include="scripts\App\User\Login.js" />
@@ -222,12 +233,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Classifieds\ClassifiedController.cs" />
+    <Compile Include="Controllers\Classifieds\ClassifiedService.cs" />
+    <Compile Include="Controllers\Classifieds\IClassifiedService.cs" />
     <Compile Include="Controllers\Common\IMasterDataService.cs" />
     <Compile Include="Controllers\Common\MasterDataController.cs" />
     <Compile Include="Controllers\Common\MasterDataService.cs" />
     <Compile Include="Controllers\Forum\ForumController.cs" />
     <Compile Include="Controllers\Forum\ForumService.cs" />
     <Compile Include="Controllers\Forum\IForumService.cs" />
+    <Compile Include="Controllers\Tracks\ITrackService.cs" />
+    <Compile Include="Controllers\Tracks\TrackController.cs" />
+    <Compile Include="Controllers\Tracks\TrackService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
