@@ -144,6 +144,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Views\Classifieds\BusinessAds.html" />
+    <Content Include="App\Views\Classifieds\Classifieds.html" />
+    <Content Include="App\Views\Classifieds\DeleteAd.html" />
+    <Content Include="App\Views\Classifieds\DogsForSale.html" />
+    <Content Include="App\Views\Classifieds\PlaceDogAd.html" />
+    <Content Include="App\Views\Classifieds\PlaceLitterAd.html" />
+    <Content Include="App\Views\Classifieds\PlaceMiscAd.html" />
+    <Content Include="App\Views\Classifieds\PrivateAds.html" />
+    <Content Include="App\Views\Classifieds\PupsForSale.html" />
     <Content Include="scripts\App\Forum\ForumController.js" />
     <Content Include="scripts\App\User\ForgotPassword.js" />
     <Content Include="scripts\App\User\Login.js" />
