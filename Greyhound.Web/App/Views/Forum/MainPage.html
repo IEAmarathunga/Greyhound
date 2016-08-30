@@ -35,18 +35,19 @@
 
 
 
-<div class="container padding-top">
+<div class="container padding-top" ng-controller="ForumController">
     <div class="col-md-9 wysiwig">
         <h1>Welcome to the Greyhound Knowledge Forum</h1>
         <p>The Greyhound-Data Forum has been created to act as a platform for greyhound enthusiasts to share information on this magnificent animal called a greyhound.</p>
         <p>Greyhound-Data reserve the right to remove any post that is off topic, advertisements or opinions they consider to be offensive.</p>
-        <p>Please read the forum usage manual please note:</p>
+        <p>Please read the <a class="cursor-pointer" ng-click="showMannual()"> forum usage manual</a> please note:</p>
         <p>If you answer then please try to stay on topic. It's absolutely okay to answer in a broader scope but don't hijack posts by switching to something off topic. </p>
         <p>n case you see an insulting post: DO NOT REPLY TO IT! Use the report button to inform the moderators so that we can delete it. </p>
+        <p><a class="cursor-pointer" ng-click="showMannual()">Read more ...</a></p>
 
         <div id="parentHorizontalTab" class="tabsWithPointer margin-top" style="display: block; width: 100%; margin: 0px;">
             <ul class="resp-tabs-list hor_1">
-                <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="border-color: rgb(193, 193, 193); background-color: white;">All Topics</li>
+                <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="border-color: rgb(193, 193, 193); background-color: white;">All Topics/li>
                 <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">GD-Website</li>
                 <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Breading</li>
                 <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-3" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Health</li>
@@ -57,7 +58,8 @@
                 <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-8" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Talk</li>
                 <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-9" role="tab" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);">Team</li>
             </ul>
-            <div class="resp-tabs-container hor_1 wysiwig" style="border-color: rgb(193, 193, 193);">
+            
+                <div class="resp-tabs-container hor_1 wysiwig"  style="border-color: rgb(193, 193, 193);">
 
                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="border-color: rgb(193, 193, 193); background-color: rgb(245, 245, 245);"><span class="resp-arrow"></span>GD-Website</h2>
                 <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
@@ -119,8 +121,9 @@
                     dfdf
                 </div>
             </div>
-        </div>
 
+            
+            </div>
 
 
 
