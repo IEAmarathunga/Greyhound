@@ -51,6 +51,7 @@ input[type="color"]:focus,
 
 
 
+
 /*menu*/
 
 #top-menu ul li , #bottom-menu ul li{display: inline-block;    margin: 0px 13px;}
@@ -428,10 +429,8 @@ input:disabled {
 }
 .nav-tabs > li > a                                  {    color: #830300;font-weight: 600}
 .breeding .tab-pane                                 {padding: 10px;}
-.wysiwig                                            {font-size: 12px;}
 .wysiwig img                                        {float:Left;padding: 5px 10px;}
-.wysiwig p                                          {font-size: 13px;line-height: 20px;margin-bottom: 10px}
-.wysiwig h3                                         {margin: 0 0 15px 0}
+.wysiwig p                                          {font-size: 14px;line-height: 20px;}
 .breading_main_data         img                        {width: 100%}
 .breading_main_data                                 {padding: 30px 0}
 .edit_race input[type="text"]                       {width: 70px}
@@ -445,7 +444,14 @@ input:disabled {
 .padding-top                                            {padding-top:40px;}
 .margin-bottom-zero                                     {margin-bottom:0}
 .margin-top                                             {margin-top:20px !important;}
-
+.comments.add-comment                                            {padding: 15px}
+.small-tabs > .nav li                                 {float:none; display: inline-block}
+.small-tabs p                                           {font-size:12px; line-height:20px}
+.small-tabs > .nav                                    {text-align:center}
+.small-tabs .nav a                                  {font-size: 12px; line-height: 20px;    padding: 5px 10px;}
+.small-tabs .tab-content                            {padding: 15px;background: #fff}
+.small-tabs                                         {padding: 20px 0}
+img.country                                          {padding: 20px}
 
 .resp-tabs-list li {
     font-size: 11px;
@@ -471,10 +477,24 @@ input:disabled {
     border-left: 4px solid #e0bd6b;
     background: #fff1d0;
 }
+.comment-text {background: #eee; border-radius: 4px; padding: 15px;position:relative}
+.comment-text:after {
+	right: 100%;
+	top: 30px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+    border-right-color: #eeeeee;
+	border-width: 10px;
+	margin-top: -10px;
+}
 .comments {
 text-align:left;
     padding: 15px 0 0px 0;
-    background:#eee;
     border-bottom:1px solid #eee;
         margin: 5px 0;
 }
@@ -536,7 +556,7 @@ padding:5px 0;
     font-size:12px;
 }
 .btn-groups.add-padding { 
-padding:10px 0;
+padding:15px ;
 display:block;
 }
 .resp-tab-content {
@@ -601,6 +621,12 @@ display:block;
 .classified-ads-sec .thumbs .descriptions h4{ color: #830300; }
 .classified-ads-sec .thumbs .descriptions strong{ color: #333; }
 .classified-ads-sec .thumbs .descriptions p{ color: #333; }
+.modal-body-scroll-v {
+        height: 525px;
+        overflow-y: auto;
+ }
+
+
 
 
 
@@ -666,7 +692,7 @@ tbody > tr > td a {color: #404040;}
 .nav-tabs.make-center li {display: inline-block; float: none}
 .filter-dogs            {padding: 15px;background: #fff; border:1px solid #eee; margin: 15px 0}
     .filter-dogs label      {padding:0 5px}
-.mini-search {max-width: 500px; margin: 30px auto; padding: 50px; background: #eee;text-align: center; border: 1px solid #ddd }
+.mini-search {max-width: 500px; margin: 30px auto; padding: 50px; background: #eee;text-align: center; border: 1px solid #ddd }  
 
 /* Smartphones (portrait and landscape) ----------- */
 @media  screen and (max-width : 480px) {
@@ -745,9 +771,6 @@ inputinput[type=number]::-webkit-outer-spin-button,inputinput[type=number]::-web
 }
 
 
-
-
-
 /* iPads (portrait and landscape) ----------- */
 @media  screen 
 and (min-width :481px) 
@@ -781,5 +804,8 @@ and (max-width : 1260px) {
     .home .testmating input[type="text"] {   width: 100%;margin-bottom: 10px}
     .home .testmating a {margin-left: 0px;}
     .home .testmating .sire, .home .testmating .dam { margin-bottom: 38px;}
-    
+    .modal-body-scroll-v {
+        height: 525px;
+        overflow-y: auto;
+    }
 }
