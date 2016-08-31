@@ -144,13 +144,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\Controllers\User\ForgotPassword.js" />
-    <Content Include="App\Controllers\User\Login.js" />
-    <Content Include="App\Controllers\User\Logout.js" />
-    <Content Include="App\Controllers\User\Membership.js" />
-    <Content Include="App\Controllers\User\Registration.js" />
-    <Content Include="App\Controllers\User\ResetPassword.js" />
-    <Content Include="App\Controllers\User\Welcome.js" />
     <Content Include="App\Views\Classifieds\BusinessAds.html" />
     <Content Include="App\Views\Classifieds\Classifieds.html" />
     <Content Include="App\Views\Classifieds\DeleteAd.html" />
@@ -160,6 +153,15 @@
     <Content Include="App\Views\Classifieds\PlaceMiscAd.html" />
     <Content Include="App\Views\Classifieds\PrivateAds.html" />
     <Content Include="App\Views\Classifieds\PupsForSale.html" />
+    <Content Include="scripts\App\Forum\ForumController.js" />
+    <Content Include="scripts\App\User\ForgotPassword.js" />
+    <Content Include="scripts\App\User\Login.js" />
+    <Content Include="scripts\App\User\Logout.js" />
+    <Content Include="scripts\App\User\Membership.js" />
+    <Content Include="scripts\App\User\Registration.js" />
+    <Content Include="scripts\App\User\ResetPassword.js" />
+    <Content Include="scripts\App\User\Welcome.js" />
+    <Content Include="App\Views\Forum\ForumMannual.html" />
     <Content Include="App\Views\Forum\MainPage.html" />
     <Content Include="App\Views\Forum\Discussion.html" />
     <Content Include="App\Views\Forum\UserProfile.html" />
@@ -235,11 +237,13 @@
     <Compile Include="Controllers\Common\IMasterDataService.cs" />
     <Compile Include="Controllers\Common\MasterDataController.cs" />
     <Compile Include="Controllers\Common\MasterDataService.cs" />
+    <Compile Include="Controllers\Forum\ForumController.cs" />
+    <Compile Include="Controllers\Forum\ForumService.cs" />
+    <Compile Include="Controllers\Forum\IForumService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\CommonServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -254,7 +258,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Views\Tracks\" />
+    <Folder Include="App\Controllers\" />
     <Folder Include="App_Data\" />
     <Folder Include="Content\Videos\" />
   </ItemGroup>
