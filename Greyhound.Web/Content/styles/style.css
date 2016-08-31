@@ -646,6 +646,28 @@ tbody > tr > td a {color: #404040;}
     .table.small-table td {padding: 3px 0;border-right: 1px solid #ddd; text-align: center;vertical-align:middle}
     .table.small-table th {padding: 3px 0;border-right: 1px solid #771e1c;text-align: center;}
 .small-table.distance .darker {min-width:100px}
+.make-center {    margin: 0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;}
+    .make-center .btn {float:none; margin: 0 -3px}
+.themed.page-links {padding: 20px; text-transform: uppercase}
+.page-header.inner-page         {margin-top: 10px}
+.short-alert.spacing {margin: 20px auto}
+.short-alert      {max-width: 700px;margin: 0 auto}
+.ad-cetegory {width:20%; float: left; text-align: center;padding : 4px}
+.ad-cetegory b {display: block}
+.ad-cetegory h6 {font-size: 18px;font-weight: 600; margin-bottom: 3px}
+    .ad-cetegory .image {height: 100px; overflow: hidden}
+.tab-items {padding: 15px; background: #fff; font-size: 13px}
+.image-description {padding: 20px 15px;border-bottom: 1px solid #eee}
+    .image-description h3 {margin: 0; margin-bottom: 10px}
+    .image-description b {padding: 0 10px 0 0; display: block}
+.nav-tabs.make-center li {display: inline-block; float: none}
+.filter-dogs            {padding: 15px;background: #fff; border:1px solid #eee; margin: 15px 0}
+    .filter-dogs label      {padding:0 5px}
+.mini-search {max-width: 500px; margin: 30px auto; padding: 50px; background: #eee;text-align: center; border: 1px solid #ddd }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media  screen and (max-width : 480px) {
 #top-menu, #bottom-menu, .login_box , .add-top-banner {display: none}
